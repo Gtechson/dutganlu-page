@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>智慧甘露 - 首页</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 整体页面容器 -->
+  <div class="page-container">
+
+    <!-- 顶部导航（包含登录按钮） -->
+    <header class="top-header">
+      <div class="logo-box">
+        <div class="logo-group">
+          <img src="images/logo1.png" alt="logo1" class="site-logo" />
+          <img src="images/logo2.png" alt="logo2" class="site-logo" />
+        </div>
+        <h1>智慧·甘露</h1>
+      </div>
+
+      <!-- 右上角登录按钮 -->
+      <button class="nav-btn login-btn">登录</button>
+    </header>
+
+    <!-- 搜索区域 -->
+    <section class="search-section">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="搜索你感兴趣的内容..." />
+        <button id="searchBtn">搜索</button>
+      </div>
+    </section>
+
+    <!-- 主要内容区 -->
+    <main class="main-layout">
+
+      <!-- 左侧导航 -->
+      <aside class="left-sidebar">
+        <h2 class="center-title">公益课堂</h2>
+        <ul class="text-menu">
+          <li class="menu-item">
+            <span class="menu-title">基础学科</span>
+            <span class="menu-desc">诗词小课堂——杜甫《登高》/ 主题基础英语课——小小飞行员的英文之旅</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-title">科普实践</span>
+            <span class="menu-desc">C919飞机和总设计师吴光辉院士 / 飞机怎么停下来 / 液体压强和流速的关系 / 冒泡排序与选择排序 /</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-title">非遗文化</span>
+            <span class="menu-desc">辽博文物讲堂——红山文化玉猪龙 /  灵启太极——从发源地解锁太极密码 / 随州国宝小课堂——编钟里的“音乐密码”</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-title">公益 1 对 1</span>
+            <span class="menu-desc">筑梦伴学·一对一公益辅导 / 启智润心成长营</span>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- 中间主内容 -->
+      <section class="content-area">
+        <div class="hero-card">
+          <!-- 转盘式轮播容器 -->
+          <div class="carousel carousel-3d">
+            <div class="carousel-slides">
+              <div class="carousel-slide active" data-index="0">
+                <img src="images/banner1.png" alt="甘露公益" class="carousel-img" />
+                <div class="carousel-caption">
+                  <h3>青春践初心 非遗薪火传</h3>
+                  <p>以青春之力赓续中华文脉，用实践之行守护非遗薪火</p>
+                </div>
+              </div>
+              <div class="carousel-slide" data-index="1">
+                <img src="images/banner2.png" alt="非遗文化" class="carousel-img" />
+                <div class="carousel-caption">
+                  <h3>甘露润心 载誉前行</h3>
+                  <p>厚积底蕴，深耕笃行，以初心铸就不凡成就</p>
+                </div>
+              </div>
+              <div class="carousel-slide" data-index="2">
+                <img src="images/banner3.png" alt="公益教育" class="carousel-img" />
+                <div class="carousel-caption">
+                  <h3>匠心传艺 数字赋能</h3>
+                  <p>精品工艺课程、沉浸式教育实践，数字化传播拓宽公益教育边界</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 控制按钮移到最右侧 -->
+          <div class="carousel-controls" style="justify-content: flex-end;">
+            <button id="prevBtn" style="margin-right: 10px;">上一张</button>
+            <button id="nextBtn">下一张</button>
+          </div>
+        </div>
+
+        <div class="video-section">
+          <h2>课程推荐</h2>
+          <div class="video-grid">
+            <div class="video-card" style="background-image: url('images/course1.jpg')">
+              <div class="video-overlay">
+                <h3>飞机为什么能飞起来——液体压强和流速的关系</h3>
+              </div>
+            </div>
+            <div class="video-card" style="background-image: url('images/course2.jpg')">
+              <div class="video-overlay">
+                <h3>图形化编程——构建创意的积木世界</h3>
+              </div>
+            </div>
+            <div class="video-card" style="background-image: url('images/course3.jpg')">
+              <div class="video-overlay">
+                <h3>诗词小课堂——杜甫《登高》</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 右侧区域（推荐内容 + 关于按钮） -->
+      <aside class="right-sidebar">
+        <div class="side-card">
+          <h2 class="center-title">推荐内容</h2>
+          <!-- 推荐图片 -->
+          <div class="recommend-img">
+            <img src="images/recommend.jpg" alt="推荐图片" />
+          </div>
+          <!-- 文字链接列表 -->
+          <ul class="recommend-list">
+            <li><a href="#">12年前的纸飞机终于飞回我手里！在时光年轮中读懂甘露</a></li>
+            <li><a href="#">社会实践热浪来袭！甘露公益协会2026暑假实践团报名火热进行中</a></li>
+            <li><a href="#">理论铸魂润人心，知行合一担使命 | 软件学院、国际信息与软件学院2026寒假社会实践纪实</a></li>
+          </ul>
+          <!-- 分页指示器 -->
+          <div class="pagination">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+
+        <div class="side-card">
+          <h2 class="center-title">关于我们</h2>
+          <nav class="side-nav">
+            <button class="nav-btn">大工风采</button>
+            <button class="nav-btn">甘露纪实</button>
+            <button class="nav-btn">软院札记</button>
+          </nav>
+        </div>
+      </aside>
+
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+      <p>© 2026 智慧甘露</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
